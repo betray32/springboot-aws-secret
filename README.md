@@ -19,6 +19,7 @@ Ensure you have the following prerequisites:
 
 ```bash
 mvn spring-boot:run
+```
 
 ## Tutorial Video
 For detailed implementation, refer to the provided AWS Secrets Retrieval Tutorial Video.

@@ -15,7 +15,8 @@ public class GreetingController {
     @GetMapping("/greeting")
     public String greet() {
         String rawThing = awsKey;
-        Optional<String> meeting = Optional.of(awsKey);
+        Optional<String> meeting = Optional.ofNullable(awsKey);
+        Optional<String> meeting2 = Optional.ofNullable("Test");
 
         return "Hello! Welcome to the Java Spring Boot REST API - ";
     }

@@ -20,6 +20,7 @@ public class GreetingController {
     @GetMapping("/greeting")
     public String greet() {
         Optional<String> value = getSecretValue.getValue(awsKey);
+        value.ifPresent(s -> System.out.println("Secret > " + s));
 
         return "Hello! Welcome to the Java Spring Boot REST API - ";
     }
